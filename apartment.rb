@@ -1,5 +1,5 @@
+
 class Apartment
-  include Rentable
   attr_reader :rent, :square_feet, :room_count, :bathroom_count
 
   def initialize(args={})
@@ -27,6 +27,10 @@ class Apartment
 
   def security_deposit
     self.rent * 2
+  end
+
+  def self.all
+    ApartmentLoader.load_apartments('./apartments.csv')
   end
 
 end

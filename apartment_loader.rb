@@ -1,3 +1,5 @@
+require 'CSV'
+class ApartmentLoader
   def self.load_apartments(filename)
     apartments = []
 
@@ -7,3 +9,4 @@
 
     return apartments
   end
+end
