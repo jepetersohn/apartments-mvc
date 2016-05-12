@@ -5,6 +5,10 @@ class Apartment
   def initialize(args={})
     @rented = false
     @pets_allowed = false
+    @rent = args[:rent]
+    @square_feet = args[:square_feet]
+    @room_count = args[:room_count]
+    @bathroom_count = args[:bathroom_count]
   end
 
   def yearly_cost
