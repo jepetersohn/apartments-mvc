@@ -7,6 +7,6 @@ class ApartmentLoader
       apartments << Apartment.new(row)
     end
 
-    return apartments
+    apartments
   end
 end
